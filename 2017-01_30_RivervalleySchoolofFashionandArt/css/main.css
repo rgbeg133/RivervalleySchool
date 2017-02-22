@@ -1,0 +1,256 @@
+/*** sectioning elements ***/
+
+body {
+  font-size: 20px;
+  background-color: #ffffff;
+
+}
+
+header {
+
+}
+
+main {
+
+}
+
+footer {
+  background-color: #630032;
+  border-top-style: solid;
+  border-top-width: 5px;
+
+}
+
+nav {
+
+}
+
+section {
+
+}
+
+aside {
+
+}
+
+
+/**** content styles ***/
+
+h1 {
+  color:  #99004d;
+  font-size: 66px;
+  font-family: 'Barrio', cursive;
+
+}
+
+h2 {
+  font-size: 40px;
+  font-family: 'Bahiana', cursive;
+  color:  #99004d;
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+font-family: 'Bahiana', cursive;
+}
+
+blockquote {
+
+}
+
+ol {
+
+}
+
+ul {
+  color: #fff;
+  font-size: 20px;
+
+}
+
+li {
+
+
+}
+
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+
+/*** image styles ***/
+
+img  {
+
+}
+
+
+/*** link styles ***/
+
+a:link {
+  color: #fff;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+  font-family: sans-serif;
+  text-decoration: none;
+
+}
+
+a:hover {
+
+  text-decoration: underline;
+
+}
+
+a:active {
+
+  text-decoration: underline;
+}
+
+
+.directory a:link {
+
+}
+
+.gallery {
+  width: 100%;
+}
+
+.gallery a {
+  display: block;
+  float: left;
+  width: 25%;
+  margin: 0;
+  padding: 9px;
+}
+
+.gallery img{
+  width: 100%;
+}
+
+.gallery img:hover {
+    opacity: 0.5;
+}
+
+@media (max-width:719px) {
+  .gallery a {
+    width: 50%;
+  }
+}
+
+.header {
+    border-bottom: 5px solid #000000;
+    margin: 20px 0;
+    padding: 5px;
+}
+
+.head {
+      border-style: solid;
+      border-width: 5px;
+}
+
+.body-1 {
+  border-left-style: dashed;
+  border-left-width: 5px;
+}
+
+@media (max-width:719px) {
+  .body-1 {
+    border-left-style:none;
+  }
+}
+
+.body-2 {
+  border-right-style: dashed;
+  border-right-width: 5px;
+
+}
+
+@media (max-width:719px) {
+  .body-2 {
+    border-right-style: none;
+  }
+}
+
+
+.side {
+  border-style: solid;
+  border-width: 5px;
+  font-size: 30px;
+}
+
+.side-1 {
+  border-style: solid;
+  border-width: 2px;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.center {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.center-1 {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px
+}
+
+
+
+/*============================================================================================================================================
+ODIN COMPONENT OVERRIDES
+ /*===========================================================================================================================================
+
+/*navbar*/
+
+.navbar {
+  background-color: #000000
+}
+
+.navbar-menu a:link,
+.navbar-menu a:visited {
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.navbar-menu a:hover,
+.navbar-menu a:active {
+  border-width: 3px solid #fff;
+  text-decoration: underline;
+
+}
