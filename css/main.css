@@ -3,7 +3,12 @@
 body {
   font-size: 20px;
   background-color: #ffffff;
+  font-family: 'Bahiana', cursive;
 
+}
+
+.body-miranda {
+background-image: url("../images/miranda-backgorund.jpg")
 }
 
 header {
@@ -67,7 +72,19 @@ h6 {
 }
 
 p {
-font-family: 'Bahiana', cursive;
+  font-size: 40px;
+  font-family: 'Barrio', cursive;
+}
+
+.p-1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.p-2 {
+  text-align: center;
+  font-size: 26px;
+  font-family: 'Bahiana', cursive;
 }
 
 blockquote {
@@ -85,24 +102,66 @@ ul {
 }
 
 li {
-
-
+  color: #fff;
+  font-size: 20px;
+  font-family: sans-serif;
 }
+
 
 table {
-
+  border-collapse: collapse;
+  width:100%;
 }
 
-tr {
+tr:nth-child(odd) {
+  background-color:#ffffff;
 
-}
+  }
+
+tr:nth-child(even) {
+    background-color:#ffffff;
+  }
 
 th {
-
+  background-color:  #ffffff;
+  color: #000000;
+  font-family: 'Barrio', cursive;
+  font-size: 30px;
 }
 
 td {
+  padding: 7px;
+  font-size: 25px;
+  text-align: center;
+}
 
+ tr:hover {background-color: #99004d}
+
+@media (max-width: 1000px) {
+  table {
+      width: 100%auto;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    border: 1px solid: #99004d;
+    display: block;
+    margin: 7px 0;
+  }
+
+  td {
+    display: block;
+    text-align: right;
+  }
+
+  td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
 }
 
 
@@ -110,6 +169,14 @@ td {
 
 img  {
 
+}
+
+
+
+.ImageBorder {
+  border-width: 6px;
+  border-color: #000000;
+  border-style: solid;
 }
 
 
@@ -141,7 +208,55 @@ a:active {
 
 
 .directory a:link {
+ color: #cceeff;
+}
 
+.miranda a:link {
+  color: #99004d;
+  font-family: 'Bahiana', cursive;
+  text-decoration: none;
+}
+
+.miranda a:visited {
+  color: #99004d;
+  font-family: 'Bahiana', cursive;
+  text-decoration: none;
+
+}
+
+.miranda a:hover {
+
+  text-decoration: underline;
+
+}
+
+.miranda a:active {
+
+  text-decoration: underline;
+}
+
+.miranda-1 a:link {
+  color: #000000;
+  font-family: 'Bahiana', cursive;
+  text-decoration: none;
+}
+
+.miranda-1 a:visited {
+  color: #000000;
+  font-family: 'Bahiana', cursive;
+  text-decoration: none;
+
+}
+
+.miranda-1 a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+
+}
+
+.miranda-1 a:active {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .gallery {
@@ -164,6 +279,11 @@ a:active {
     opacity: 0.5;
 }
 
+.gallery-1 img:hover {
+    opacity: 0.5;
+}
+
+
 @media (max-width:719px) {
   .gallery a {
     width: 50%;
@@ -174,6 +294,12 @@ a:active {
     border-bottom: 5px solid #000000;
     margin: 20px 0;
     padding: 5px;
+}
+
+.header-miranda {
+  border-bottom: 5px solid #000000;
+  margin: 0px 0;
+  padding: 5px;
 }
 
 .head {
@@ -208,7 +334,9 @@ a:active {
 .side {
   border-style: solid;
   border-width: 5px;
-  font-size: 30px;
+  font-size: 20px;
+  font-family:  'Arvo', serif;
+  padding: inherit;
 }
 
 .side-1 {
@@ -230,8 +358,40 @@ a:active {
   margin-top: 30px
 }
 
+.center-2 {
+  margin-left: 100px;
+  margin-right: 100px;
+}
 
+.left {
+  font-size: 35px;
+}
 
+.department {
+     border-bottom: 3px solid #000;
+     padding-top: 7px;
+     font-size: 60px;
+     padding-bottom: 0px;
+     margin: 20px 0;
+     padding
+
+}
+
+.right {
+ padding-bottom: none;
+}
+
+.miranda {
+  color: #99004d;
+  font-family: 'Bahiana', cursive;
+  font-size: 40px;
+}
+
+.miranda-1 {
+  color: #000000;
+  font-family: 'Bahiana', cursive;
+  font-size: 25px;
+}
 /*============================================================================================================================================
 ODIN COMPONENT OVERRIDES
  /*===========================================================================================================================================
@@ -239,13 +399,22 @@ ODIN COMPONENT OVERRIDES
 /*navbar*/
 
 .navbar {
-  background-color: #000000
+  background-color: #000000;
+
 }
 
+.menu-toggle {
+  color: #fff;
+}
+
+.navbar li {
+  padding: 0
+}
 .navbar-menu a:link,
 .navbar-menu a:visited {
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'Bahiana', cursive;
+  font-size: 29px;
 }
 
 .navbar-menu a:hover,
@@ -254,3 +423,43 @@ ODIN COMPONENT OVERRIDES
   text-decoration: underline;
 
 }
+
+
+.navbar-2 {
+  background-color: #fff;
+
+}
+.navbar-2 li {
+  padding: 0
+}
+.navbar-2-menu a:link,
+.navbar-2-menu a:visited {
+  color: #99004d;
+  font-family: 'Bahiana', cursive;
+  font-size: 29px;
+}
+
+.navbar-2-menu a:hover,
+.navbar-2-menu a:active {
+  border-width: 3px solid #000000;
+  text-decoration: underline;
+
+}
+
+.navbar-menu {
+    background-color: #333;
+  }
+
+  .menu-dismiss {
+    color: #fff;
+  }
+
+  .menu-shown a:link,
+  .menu-shown a:visited {
+    color: #000000;
+  }
+
+  .menu-shown a:active,
+  .menu-shown a:hover {
+
+  }
